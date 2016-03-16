@@ -1,25 +1,127 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Oj5-P2-ttu">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Main Controller-->
+        <scene sceneID="gk3-4G-fOt">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="Oj5-P2-ttu" customClass="MainController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="569" sectionHeaderHeight="28" sectionFooterHeight="28" id="ykE-Ov-sfe">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="folding" rowHeight="569" id="Oat-Bd-nzt" customClass="FoldingCell" customModule="FoldingCell">
+                                <rect key="frame" x="0.0" y="28" width="600" height="569"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oat-Bd-nzt" id="XWf-FT-8x3">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="568"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJJ-2E-nfD" userLabel="Foreground" customClass="RotatedView" customModule="FoldingCell">
+                                            <rect key="frame" x="8" y="8" width="584" height="75"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Foreground" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJJ-4X-Icx">
+                                                    <rect key="frame" x="8" y="27" width="568" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="cJJ-4X-Icx" secondAttribute="trailing" constant="8" id="2E4-Ay-ecD"/>
+                                                <constraint firstItem="cJJ-4X-Icx" firstAttribute="leading" secondItem="xJJ-2E-nfD" secondAttribute="leading" constant="8" id="QGH-Yt-J2N"/>
+                                                <constraint firstAttribute="height" constant="75" id="tMA-Is-pwR"/>
+                                                <constraint firstItem="cJJ-4X-Icx" firstAttribute="centerY" secondItem="xJJ-2E-nfD" secondAttribute="centerY" id="wH9-4F-CVr"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="ymT-x0-jC1"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="ymT-x0-jC1"/>
+                                                </mask>
+                                            </variation>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8qS-2f-jYl" userLabel="Container" customClass="RotatedView" customModule="FoldingCell">
+                                            <rect key="frame" x="8" y="110" width="584" height="200"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Container" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvd-9p-kcq">
+                                                    <rect key="frame" x="8" y="89" width="568" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" red="0.88235294119999996" green="0.90588235289999997" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="yvd-9p-kcq" firstAttribute="leading" secondItem="8qS-2f-jYl" secondAttribute="leading" constant="8" id="4XM-PM-SYW"/>
+                                                <constraint firstItem="yvd-9p-kcq" firstAttribute="centerY" secondItem="8qS-2f-jYl" secondAttribute="centerY" id="Vq8-5G-XKI"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="cGF-vN-gkb"/>
+                                                <constraint firstAttribute="height" constant="200" id="is6-1A-Hty"/>
+                                                <constraint firstAttribute="trailing" secondItem="yvd-9p-kcq" secondAttribute="trailing" constant="8" id="zVh-Xd-bwW"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="cGF-vN-gkb"/>
+                                                </mask>
+                                            </variation>
+                                        </view>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="xJJ-2E-nfD" secondAttribute="trailing" constant="8" id="1Tk-Qv-5wz"/>
+                                        <constraint firstItem="8qS-2f-jYl" firstAttribute="top" secondItem="xJJ-2E-nfD" secondAttribute="bottom" constant="27" identifier="ContainerViewTop" id="7hl-2W-aJR"/>
+                                        <constraint firstItem="8qS-2f-jYl" firstAttribute="leading" secondItem="XWf-FT-8x3" secondAttribute="leading" constant="8" id="DhV-7Z-xSF"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="xJJ-2E-nfD" secondAttribute="bottom" constant="478" id="UQ3-Qg-T8l"/>
+                                        <constraint firstItem="xJJ-2E-nfD" firstAttribute="top" secondItem="XWf-FT-8x3" secondAttribute="topMargin" constant="8" id="VUG-K4-8X2"/>
+                                        <constraint firstAttribute="bottom" secondItem="xJJ-2E-nfD" secondAttribute="bottom" constant="478" id="W0D-ip-um2"/>
+                                        <constraint firstItem="xJJ-2E-nfD" firstAttribute="leading" secondItem="XWf-FT-8x3" secondAttribute="leadingMargin" constant="8" id="WOr-Hn-dwg"/>
+                                        <constraint firstAttribute="trailing" secondItem="xJJ-2E-nfD" secondAttribute="trailing" constant="8" id="WUw-qB-faC"/>
+                                        <constraint firstItem="xJJ-2E-nfD" firstAttribute="top" secondItem="XWf-FT-8x3" secondAttribute="top" constant="8" identifier="ForegroundViewTop" id="Zye-Hz-WfE"/>
+                                        <constraint firstItem="xJJ-2E-nfD" firstAttribute="leading" secondItem="XWf-FT-8x3" secondAttribute="leading" constant="8" id="bVt-Hw-V8S"/>
+                                        <constraint firstAttribute="trailing" secondItem="8qS-2f-jYl" secondAttribute="trailing" constant="8" id="k6J-b2-1mN"/>
+                                        <constraint firstItem="xJJ-2E-nfD" firstAttribute="top" secondItem="XWf-FT-8x3" secondAttribute="topMargin" constant="8" id="zXc-Q3-oHL"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="1Tk-Qv-5wz"/>
+                                            <exclude reference="UQ3-Qg-T8l"/>
+                                            <exclude reference="VUG-K4-8X2"/>
+                                            <exclude reference="W0D-ip-um2"/>
+                                            <exclude reference="WOr-Hn-dwg"/>
+                                            <exclude reference="zXc-Q3-oHL"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="itemCount">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="containerView" destination="8qS-2f-jYl" id="BYg-I4-1k8"/>
+                                    <outlet property="foregroundView" destination="xJJ-2E-nfD" id="Rkb-j5-cMI"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Oj5-P2-ttu" id="tfJ-Yr-HOA"/>
+                            <outlet property="delegate" destination="Oj5-P2-ttu" id="G91-cf-yYo"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xty-AR-IoE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="361" y="453"/>
         </scene>
     </scenes>
 </document>

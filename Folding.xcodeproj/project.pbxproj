@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E03B7B27BDD7CD82BD86A1D /* Pods_Folding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277999778123EABCC29E884C /* Pods_Folding.framework */; };
 		FA2951131C99CA03005AFA65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2951121C99CA03005AFA65 /* main.m */; };
 		FA2951161C99CA03005AFA65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2951151C99CA03005AFA65 /* AppDelegate.m */; };
-		FA2951191C99CA03005AFA65 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2951181C99CA03005AFA65 /* ViewController.m */; };
 		FA29511C1C99CA03005AFA65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA29511A1C99CA03005AFA65 /* Main.storyboard */; };
 		FA29511E1C99CA04005AFA65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA29511D1C99CA04005AFA65 /* Assets.xcassets */; };
 		FA2951211C99CA04005AFA65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA29511F1C99CA04005AFA65 /* LaunchScreen.storyboard */; };
 		FA29512C1C99CA04005AFA65 /* FoldingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA29512B1C99CA04005AFA65 /* FoldingTests.m */; };
 		FA2951371C99CA77005AFA65 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FA2951361C99CA77005AFA65 /* .gitignore */; settings = {ASSET_TAGS = (); }; };
+		FA38E8CA1C99D4B400B55AC0 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA38E8C91C99D4B400B55AC0 /* MainController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,12 +29,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BE807C08A78AC03B8F5AC1A /* Pods-Folding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Folding.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Folding/Pods-Folding.debug.xcconfig"; sourceTree = "<group>"; };
+		277999778123EABCC29E884C /* Pods_Folding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Folding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA17F9CD3CB1F25AD05B9958 /* Pods-Folding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Folding.release.xcconfig"; path = "Pods/Target Support Files/Pods-Folding/Pods-Folding.release.xcconfig"; sourceTree = "<group>"; };
 		FA29510E1C99CA03005AFA65 /* Folding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Folding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2951121C99CA03005AFA65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA2951141C99CA03005AFA65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FA2951151C99CA03005AFA65 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FA2951171C99CA03005AFA65 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FA2951181C99CA03005AFA65 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FA29511B1C99CA03005AFA65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA29511D1C99CA04005AFA65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA2951201C99CA04005AFA65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +44,8 @@
 		FA29512B1C99CA04005AFA65 /* FoldingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoldingTests.m; sourceTree = "<group>"; };
 		FA29512D1C99CA04005AFA65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA2951361C99CA77005AFA65 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		FA38E8C81C99D4B400B55AC0 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		FA38E8C91C99D4B400B55AC0 /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E03B7B27BDD7CD82BD86A1D /* Pods_Folding.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +67,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12C60E1C5ABBFC932C77C3D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BE807C08A78AC03B8F5AC1A /* Pods-Folding.debug.xcconfig */,
+				DA17F9CD3CB1F25AD05B9958 /* Pods-Folding.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BAFED5808662E6419688F962 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				277999778123EABCC29E884C /* Pods_Folding.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA2951051C99CA03005AFA65 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +91,8 @@
 				FA2951101C99CA03005AFA65 /* Folding */,
 				FA29512A1C99CA04005AFA65 /* FoldingTests */,
 				FA29510F1C99CA03005AFA65 /* Products */,
+				12C60E1C5ABBFC932C77C3D8 /* Pods */,
+				BAFED5808662E6419688F962 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,13 +110,13 @@
 			children = (
 				FA2951141C99CA03005AFA65 /* AppDelegate.h */,
 				FA2951151C99CA03005AFA65 /* AppDelegate.m */,
-				FA2951171C99CA03005AFA65 /* ViewController.h */,
-				FA2951181C99CA03005AFA65 /* ViewController.m */,
 				FA29511A1C99CA03005AFA65 /* Main.storyboard */,
 				FA29511D1C99CA04005AFA65 /* Assets.xcassets */,
 				FA29511F1C99CA04005AFA65 /* LaunchScreen.storyboard */,
 				FA2951221C99CA04005AFA65 /* Info.plist */,
 				FA2951111C99CA03005AFA65 /* Supporting Files */,
+				FA38E8C81C99D4B400B55AC0 /* MainController.h */,
+				FA38E8C91C99D4B400B55AC0 /* MainController.m */,
 			);
 			path = Folding;
 			sourceTree = "<group>";
@@ -121,9 +145,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA2951301C99CA04005AFA65 /* Build configuration list for PBXNativeTarget "Folding" */;
 			buildPhases = (
+				85DB02806B35E449C780926C /* Check Pods Manifest.lock */,
 				FA29510A1C99CA03005AFA65 /* Sources */,
 				FA29510B1C99CA03005AFA65 /* Frameworks */,
 				FA29510C1C99CA03005AFA65 /* Resources */,
+				11DA43371E52CA0AB10CA706 /* Embed Pods Frameworks */,
+				D902F1B1CB79CD642680170A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,13 +237,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11DA43371E52CA0AB10CA706 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Folding/Pods-Folding-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85DB02806B35E449C780926C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D902F1B1CB79CD642680170A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Folding/Pods-Folding-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA29510A1C99CA03005AFA65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA2951191C99CA03005AFA65 /* ViewController.m in Sources */,
 				FA2951161C99CA03005AFA65 /* AppDelegate.m in Sources */,
+				FA38E8CA1C99D4B400B55AC0 /* MainController.m in Sources */,
 				FA2951131C99CA03005AFA65 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +416,7 @@
 		};
 		FA2951311C99CA04005AFA65 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BE807C08A78AC03B8F5AC1A /* Pods-Folding.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Folding/Info.plist;
@@ -352,6 +428,7 @@
 		};
 		FA2951321C99CA04005AFA65 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA17F9CD3CB1F25AD05B9958 /* Pods-Folding.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Folding/Info.plist;
@@ -404,6 +481,7 @@
 				FA2951321C99CA04005AFA65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA2951331C99CA04005AFA65 /* Build configuration list for PBXNativeTarget "FoldingTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +490,7 @@
 				FA2951351C99CA04005AFA65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
