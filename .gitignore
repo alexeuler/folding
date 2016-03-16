@@ -1,0 +1,4 @@
+Pods
+Folding.xcodeproj/*
+!Folding.xcodeproj/*.pbxproj
+Folding.xcworkspace
